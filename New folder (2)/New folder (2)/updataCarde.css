@@ -1,0 +1,300 @@
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #010326;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+  
+.nav-item a {
+  width: 100%;
+  font-size:16px ;
+  color: white;
+}
+
+  /* nav {
+    margin: auto;
+   background-color: #29303b;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    color: #fff;
+    width: 100px;
+    padding-left: 80px;
+    
+    text-decoration: none;
+} */
+
+  /* a:hover{
+width: 30px ;
+height: px;
+border-radius: 20px;
+background-color: white;
+color: black;
+} */
+  .item:hover {
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  .image {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .image img {
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .content {
+    flex: 2;
+
+
+    border-radius: 10px;
+    margin-left: 25px;
+
+  }
+
+
+
+  .content p {
+    margin-bottom: 15px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .price p {
+    font-weight: bold;
+  }
+
+  .metrics p {
+    text-align: center;
+  }
+
+  .info p {
+    margin-bottom: 5px;
+  }
+
+  .content a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: #fff;
+
+    border-radius: 5px;
+  }
+
+  .item {
+    width: 20rem;
+    height: 10rem;
+  }
+
+
+  .btns {
+    background-color: #278af5cf;
+    /* Primary blue color */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for size */
+    font-size: 12px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transitions */
+  }
+
+  .accordion-item1 {
+    background-color: #0754B0;
+    width: 100%;
+
+  }
+
+  #img2 {
+    display: none;
+  }
+
+  .accordion-item2 {
+    background-color: #0754B0;
+    width: 100%;
+
+  }
+
+  .accordion-item3 {
+    background-color: #0754B0;
+    width: 100%;
+
+  }
+
+  .accordion-item4 {
+    background-color: #0754B0;
+    width: 100%;
+
+  }
+
+  .btns:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Slight lift on hover */
+  }
+
+  .custom-button:active {
+    background-color: #004085;
+    /* Even darker blue when active */
+    transform: translateY(0);
+    /* Reset lift on click */
+  }
+
+  .btns:focus {
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    /* Custom focus outline */
+  }
+
+  .portfolio-menu {
+    min-width: 100%;
+    margin: 50px 0;
+  }
+
+  /* */
+
+  .portfolio-menu ul li a {
+    color: black;
+  }
+
+  .portfolio-menu ul li {
+    /* color: var(--whiteColor); */
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    padding: 20px 0;
+    margin: -20px 0;
+    transition: .5s all ease-in-out;
+  }
+
+ .active {
+    background: white;
+    color: black;
+    height: 50px;
+    /* padding-left: -20px; */
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 23%;
+    margin-left: -11px;
+    /* min-width:  40%; */
+  }
+
+  .accordion-body {
+    background-color: #010326;
+  }
+
+  p {
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+  }
+
+  hr {
+    height: 3px;
+    color: white;
+  }
+
+  .price {
+    width: 80%;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  
+  @media (max-width : 990px) {
+    .active{
+      width: 30%;
+      font-size: 17px;
+      /* background-color: red; */
+    }
+}
+.accordion h2{
+  margin-left:10px;
+}
+.accordion a{
+  margin-left: 10px;
+}
+/* 375 */
+@media (max-width : 375px) {
+    .active{
+      width: 44%;
+      font-size: 17px;
+      
+    }
+}
+
+/* 414 */
+@media (max-width : 414px) {
+    .active{
+      width: 44%;
+      font-size: 17px;
+     
+    }
+}
+
+@media (max-width : 430px ) {
+    .active{
+      width: 44%;
+      font-size: 17px;
+      
+    }
+}
+

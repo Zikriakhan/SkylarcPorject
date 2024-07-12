@@ -1,0 +1,124 @@
+
+/* HERO SECTION STARTS */
+
+/* HERO SECTION STARTS */
+#hero {
+min-width: 100%;
+min-height: 100vh;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+z-index: 6;
+/* Hide overflow to prevent scrolling */
+}
+
+.hero-content {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.hero-content h1 {
+color: var(--whiteColor);
+font-size: clamp(20px, 6vw, 60px);
+font-weight: bold;
+text-transform: capitalize;
+line-height: clamp(25px, 6vw, 86px);
+}
+
+.hero-content p {
+color: var(--whiteColor);
+padding-block: 20px;
+letter-spacing: 1.5px;
+}
+
+.hero-btns {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2em;
+z-index: 4;
+}
+
+.work-btn button {
+background: none;
+outline: none;
+color: var(--whiteColor);
+border: 2px solid var(--whiteColor);
+border-radius: 30px;
+padding: 10px 20px;
+text-transform: capitalize;
+transition: 0.3s all ease-in;
+}
+
+.work-btn button:hover {
+background-color: var(--whiteColor);
+color: var(--primaryColor);
+box-shadow:
+0 0 10px 0 rgba(255, 255, 255, .3),
+/* Top */
+0 0 10px 0 rgba(255, 255, 255, .3),
+/* Right */
+0 0 10px 0 rgba(255, 255, 255, .3),
+/* Bottom */
+0 0 10px 0 rgba(255, 255, 255, .3);
+}
+
+.glow-boxes {
+position: absolute;
+width: 100%;
+top: 120px;
+left: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 2em;
+overflow: hidden;
+}
+
+.glow-boxes .glow-box {
+width: 30px;
+height: 30px;
+background-color: transparent;
+border-radius: 10px;
+display: block;
+z-index: 2;
+opacity: .7;
+
+}
+
+.glow-boxes span:nth-child(even) {
+background-color: transparent;
+}
+
+
+
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+   
+    width: 100%; /* Adjust the width as per your preference */
+}
+.box {
+    width: 3.5%;
+    height: 50px;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+   overflow: hidden;
+    transition: background-color 0.4s;
+   
+}
+.box.red {
+    background-color: red;
+}
+.box.green {
+    background-color: green;
+}
+.box.transparent{
+    background-color: transparent;
+}
+

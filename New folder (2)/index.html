@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skylarc</title>
+
+  <!-- fonawesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+   <!-- updata code od the css style   -->
+   <link rel="stylesheet" href="./New folder (2)/updataHero.css">
+   <link rel="stylesheet" href="./New folder (2)/updataCarde.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  
+
+  <!-- Nunito fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@300,700,900,600,800,400,500&display=swap" rel="stylesheet" />
+
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- remix icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- locomotive -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+
+  <!-- my styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- <div id="loader">
+        <div id="loader-bg-1"></div>
+        <div id="loader-bg-2"></div>
+        <div class="hero-content">
+            <h1>Empowering growth
+                through
+                <br>digital evolution
+            </h1>
+            <p>Transforming your vision
+                into digital reality with our top-notch software <br>
+                development experts. Let's code your dream.</p>
+            <div>
+                <div class="work-btn">
+                    <button>Work with us</button>
+                </div>
+                <div class="work-btn">
+                    <button>Book free consultation</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+  <!------------------------- Navbar Starts -------------------------->
+
+  <header data-scroll-sticky data-scroll-target>
+    <div class="fluid-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/logo/logo.png" alt="logo" />
+          </a>
+          <img src="./assets/logo/logotext.png" alt="logo" class="fade-out text-logo" />
+        </div>
+        <div class="nav-links-container">
+          <ul class="navlinks">
+            <li>
+              <a class="work-link">
+                <span class="btn_text">
+                  <small>Our Work</small>
+                  <small>Our Work</small>
+                  <!-- Duplicate for hover effect -->
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="services-link">
+                <span class="btn_text">
+                  <small>Our Services</small>
+                  <small>Our Services</small>
+                  <!-- Duplicate for hover effect -->
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html" class="services-link">
+                <span class="btn_text">
+                  <small>Contact Us</small>
+                  <small>Contact Us</small>
+                  <!-- Duplicate for hover effect -->
+                </span>
+              </a>
+            </li>
+            <button class="cta-btn">Book Free Consultation</button>
+          </ul>
+        </div>
+
+        <div class="mobile-nav">
+          <ul class="mobile-navlinks">
+            <li onclick="menuClose()">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  fill="white" />
+              </svg>
+            </li>
+            <li id="mobile-work">
+              <a href="#work">Our Work</a>
+            </li>
+            <li id="mobile-services">
+              <a href="#services">Our Services</a>
+            </li>
+            <li id="mobile-services">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <button class="cta-btn">Book Free Consultation</button>
+          </ul>
+        </div>
+        <!-- Hamburger Menu Button -->
+        <li class="menubtn" onclick="menuOpen()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" style="fill: white" />
+          </svg>
+        </li>
+      </div>
+    </div>
+  </header>
+
+  <!------------------------- Navbar Ends -------------------------->
+
+  <div id="fixed-image"></div>
+
+  <div id="main" data-scroll-container>
+    <!------------------------- hero section starts -------------------------->
+    <section id="hero" style="position: relative;"  data-scroll>
+      <div class="container-fluid">
+        <div class="glow-boxes" id="glow-boxes-container"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="hero-content">
+            <h1
+              data-scroll
+              data-scroll-speed="-2"
+              data-scroll-direction="horizontal"
+            >
+              Empowering growth through <br />digital evolution
+            </h1>
+            <p
+              data-scroll
+              data-scroll-speed="2"
+              data-scroll-direction="horizontal"
+            >
+              Transforming your vision into digital reality with our top-notch
+              software <br />
+              development experts. Let's code your dream.
+            </p>
+            <div
+              class="hero-btns"
+              data-scroll
+              data-scroll-speed="2"
+              data-scroll-direction="horizontal"
+            >
+              <div class="work-btn">
+                <button>Work with us</button>
+              </div>
+              <div class="work-btn">
+                <button>Book free consultation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <div class="main" style="position: absolute;left: 0px;top: 0px; z-index: 99; overflow: hidden;" >
+
+
+
+      
+
+  </div>
+    <!------------------------- hero section ends it is the updata code it -------------------------->
+
+    <!------------------------- Our Work section starts it is the updata code it  -------------------------->
+
+    
+    <div>
+      <div class="col-lg-12 col-sm-12 col-md-12" style="color:White">
+        <h4 class="work-subheading" style="color:White">Our Work<span style="position: relative;top: -10px;">___</span>
+        </h4>
+        <h1 class="work-heading" style="color:White ;font-size: 45px;">Our Work</h1>
+        <p class="work-subtitle" style="color:White">
+          Have a look at what we have provided to our clients
+        </p>
+      </div>
+  
+      <!-- <div class="portfolio-menu">
+              <ul>
+                  <li class="active" style="font-size: 1rem;" data-filter="*">All Work</li>
+                  <li style="color: white;font-size: 1rem;" data-filter=".web">Websites</li>
+                  <li style="color: white;font-size: 1rem;" data-filter=".apps">Mobile Apps</li>
+                  <li style="color: white;font-size: 1rem;" data-filter=".uiux">UIUX Designs</li>
+              </ul>
+          </div> -->
+      <div class="portfolio-menu" style="width: 100%;display: flex;justify-content: center;align-items: center;">
+        <nav style=" width: 60%; " class="navbar navbar-expand-lg navbar-light ">
+          <div style="width: 100%;background-color: #0056b3;border-radius: 50px;height: 50px;" class="container-fluid">
+            <a class="nav-link  nav-links" style="background: white;
+    color: black;
+    height: 50px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 23%;
+    margin-left: -11px;
+     min-width: 40%;" aria-current="page" href="#">All Work</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span id="Clickits" class="navbar-toggler-icon"></span>
+            </button>
+            <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul style="width: 100%;
+              height: 48px;
+              position: relative;
+              top: -6px;
+              background-color: #0754AF;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a style="color: white; " class="nav-link" href="#">Websites</a>
+  
+                </li>
+                <li class="nav-item">
+                  <a style="color: white; " class="nav-link" href="#">Mobile Apps</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: white;" class="nav-link" href="#">UIUX Designs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div style="width: 100%;display: flex;justify-content: center;align-items: center;" class="row ">
+      <div class="col-sm-5">
+        <div class="card" style="background-color:  #010326;">
+          <div style="padding: 0px;" class="card-body">
+            <div class="image">
+  
+              <img style="width: 100%; height: 600px ;" id="displayedImage" src="image1.png" alt="Default Image">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="position: relative;top: -44px;" class="col-sm-5">
+        <div style="border: none;" class="card">
+          <div class="card-body" style="background-color:  #010326; border: none;">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item1 colorDiv" style="  border-radius: 15px;width: 110%;">
+                <h2 onclick="changeImage(0)" class="accordion-header" id="headingOne">
+                  <a style="color: rgb(255, 255, 255); font-size: 20px; text-decoration: none;list-style: none    ;"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Client Management System
+                  </a>
+                </h2>
+                <a id="displayFlix" style="list-style: none; display: none;" href="#">Read Full Case Study</a>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <p class="pagr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="details">
+                    <div class="price">
+                      <button class="btns">Web App</button>
+                      <button class="btns">Payment Integartion</button>
+                      <button class="btns">Laravel</button>
+                      <button class="btns">PHP</button>
+                    </div>
+  
+                  </div>
+                  <a style="list-style: none;" href="#">Read Full Case Study</a>
+                </div>
+              </div>
+              <hr>
+  
+              <div class="accordion-item2 " style="border: none;    background-color: #010326;">
+                <div class="item12">
+                  <h2 onclick="changeImage(1)" class="" id="headingTwo">
+                    <a style="color: rgb(255, 255, 255) ; font-size: 20px; text-decoration: none;list-style: none;"
+                      class="" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      Client Management System
+                    </a>
+                  </h2>
+                  <a style="list-style: none;" href="#">Read Full Case Study</a>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <p class="pagr">
+  
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="details">
+                      <div class="price">
+                        <button class="btns">Web App</button>
+                        <button class="btns">Payment Integartion</button>
+                        <button class="btns">Laravel</button>
+                        <button class="btns">PHP</button>
+                      </div>
+  
+                    </div>
+                    <a style="list-style: none;" href="#">Read Full Case Study</a>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="accordion-item3" style="border: none;   background-color: #010326;">
+                <h2 onclick="changeImage(2)" class="accordion-header" id="headingThree">
+                  <a href="" style="color: rgb(255, 255, 255); font-size: 20px; text-decoration: none;list-style: none; "
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Client Management System
+                  </a>
+                </h2>
+                <a style="list-style: none;" href="#">Read Full Case Study</a>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <p class="pagr">
+  
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="details">
+                    <div class="price">
+                      <button class="btns">Web App</button>
+                      <button class="btns">Payment Integartion</button>
+                      <button class="btns">Laravel</button>
+                      <button class="btns">PHP</button>
+                    </div>
+  
+                  </div>
+                  <a style="list-style: none;" href="#">Read Full Case Study</a>
+                </div>
+              </div>
+              <hr>
+              <div class="accordion-item4" style="border: none;   background-color: #010326;">
+                <h2 onclick="changeImage(3)" class="accordion-header" id="headingFour">
+                  <a href="" style="color: rgb(255, 255, 255); font-size: 20px; text-decoration: none;list-style: none; "
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Client Management System
+                  </a>
+                </h2>
+                <a style="list-style: none;" href="#">Read Full Case Study</a>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <p class="pagr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="details">
+                    <div class="price">
+                      <button class="btns">Web App</button>
+                      <button class="btns">Payment Integartion</button>
+                      <button class="btns">Laravel</button>
+                      <button class="btns">PHP</button>
+                    </div>
+  
+                  </div>
+                  <a style="list-style: none;" href="#">Read Full Case Study</a>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      <!------------------------- Our Work section ends -------------------------->
+
+      <!------------------------- Testimonials section starts -------------------------->
+      <section id="testimonials" data-scroll class="section_space_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <h4 class="work-subheading">Testimonials</h4>
+              <h1 class="work-heading">Client Message</h1>
+              <p class="work-subtitle">
+                See what our past clients have to say us!
+              </p>
+              <div class="quote-container">
+                <img src="assets/testimonials/quote.png" alt="quote-img" class="quote-img" />
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p class="client-review">
+                        I recently hired XYZ Web Development Agency to create a
+                        website for my small business, and I couldn't be happier
+                        with the results! From start to finish, their team was
+                        professional, responsive, and incredibly skilled. They
+                        took the time to understand my vision and goals for the
+                        site, and they exceeded my expectations in every way.
+                      </p>
+                      <h6 class="client-name">Daniel Flynn</h6>
+                      <span class="client-company">Owner of RealVault Inc.</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="client-review">
+                        I recently hired XYZ Web Development Agency to create a
+                        website for my small business, and I couldn't be happier
+                        with the results! From start to finish, their team was
+                        professional, responsive, and incredibly skilled. They
+                        took the time to understand my vision and goals for the
+                        site, and they exceeded my expectations in every way.
+                      </p>
+                      <h6 class="client-name">Daniel Flynn</h6>
+                      <span class="client-company">Owner of RealVault Inc.</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="client-review">
+                        I recently hired XYZ Web Development Agency to create a
+                        website for my small business, and I couldn't be happier
+                        with the results! From start to finish, their team was
+                        professional, responsive, and incredibly skilled. They
+                        took the time to understand my vision and goals for the
+                        site, and they exceeded my expectations in every way.
+                      </p>
+                      <h6 class="client-name">Daniel Flynn</h6>
+                      <span class="client-company">Owner of RealVault Inc.</span>
+                    </div>
+                  </div>
+
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------- Testimonials section starts -------------------------->
+
+      <!------------------------- Partners section starts -------------------------->
+      <section id="partners" data-scroll class="section_space_top">
+        <div class="partner-logos">
+          <div class="logos-slide">
+            <img src="assets/partners/engadger.png" alt="logo" />
+            <img src="assets/partners/forbes.png" alt="logo" />
+            <img src="assets/partners/thewas.png" alt="logo" />
+            <img src="assets/partners/washingtonpost.png" alt="logo" />
+            <img src="assets/partners/wired.png" alt="logo" />
+          </div>
+        </div>
+      </section>
+      <!------------------------- Partners section starts -------------------------->
+
+      <!------------------------- Services section starts -------------------------->
+      <section id="services" data-scroll class="section_space_top">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <h4 class="work-subheading">Our Services</h4>
+              <h1 class="work-heading">what we offer</h1>
+              <p class="work-subtitle">
+                Have a look at what we are offering to our clients.
+              </p>
+            </div>
+          </div>
+          <div class="row services-items" data-scroll data-scroll-speed="2">
+            <div class="col-12 col-md-6 col-lg-6 col-xs-12 mt-3 mb-3 h-100 col-xl-4 col-xxl-4">
+              <div class="service-container">
+                <img src="assets/services/monitor.png" alt="monitor" />
+                <h3>web development</h3>
+                <div class="service-chips-container">
+                  <div class="service-chip">
+                    <span>Corporate Website</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>E-commerce Stores</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>AI / ChatGPT Integration</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Landing Page</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Custom Website</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>No Code Website</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Web Apps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xs-12 mt-3 mb-3 h-100 col-xl-4 col-xxl-4">
+              <div class="service-container">
+                <img src="assets/services/smartphone.png" alt="mobile" />
+                <h3>mobile app development</h3>
+                <div class="service-chips-container">
+                  <div class="service-chip">
+                    <span>Native Android</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Native iOS</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Cross-Platform Flutter</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Cross-Platform React Native</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>AI Integrated Mobile Apps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 col-xs-12 mt-3 mb-3 h-100 col-xl-4 col-xxl-4">
+              <div class="service-container">
+                <img src="assets/services/pen-tool.png" alt="designing" />
+                <h3>UIUX Designing</h3>
+                <div class="service-chips-container">
+                  <div class="service-chip">
+                    <span>Wireframing</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>High Fidelity Designs</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>User Research</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Advance Prototyping</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Web App Designing</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Website Designing</span>
+                  </div>
+                  <div class="service-chip">
+                    <span>Mobile App Designing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------- Services section ends -------------------------->
+
+      <!------------------------- Workflow section starts -------------------------->
+
+      <!-- <section id="workflow" data-scroll class="section_space_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <h4 class="work-subheading">Our Workflow</h4>
+                        <h1 class="work-heading">How we work</h1>
+                        <p class="work-subtitle">A brief overview about our working strategy</p>
+                    </div>
+
+                    <div class="col-lg lines">
+                        <div class="vertical-line">
+                            <div class="kick">
+                                <span class="workflow-bg" data-scroll>Kick Off</span>
+                                <img src="assets/work/kickoff.jpg" alt="image">
+                            </div>
+                        </div>
+                        <div class="vertical-line">
+                            <div class="uiux-parent">
+                                <span class="uiux workflow-bg" data-scroll>UI UX Designing</span>
+                                <img src="assets/work/uiux.jpg" alt="image">
+                            </div>
+                        </div>
+                        <div class="vertical-line">
+                            <div class="testing-parent">
+                                <span class="testing1 workflow-bg" data-scroll>Testing</span>
+                                <img src="assets/work/testing.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="vertical-line">
+                            <div class="development-parent">
+                                <span class="development workflow-bg" data-scroll>Development</span>
+                                <img src="assets/work/development.jpg" alt="image">
+                            </div>
+                        </div>
+                        <div class="vertical-line">
+                            <div class="testing2-parent">
+                                <span class="testing2 workflow-bg" data-scroll>Testing</span>
+                                <img src="assets/work/testing.jpg" alt="image">
+                            </div>
+                            <div class="handover-parent">
+                                <span class="handover workflow-bg" data-scroll>Handover</span>
+                                <img src="assets/work/handover.jpg" alt="image">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+      <section id="workflow2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <h4 class="work-subheading">Our Workflow</h4>
+              <h1 class="work-heading">How we work</h1>
+              <p class="work-subtitle">
+                A brief overview about our working strategy
+              </p>
+            </div>
+
+            <div class="col-lg lines" style="position: relative">
+              <div class="vertical-line">
+                <div class="kick-parent">
+                  <span class="kickoff-text workflow-btn">Kickoff</span>
+                  <img src="./assets/work/kickoff.jpg" alt="Kickoff" />
+                </div>
+              </div>
+              <div class="vertical-line">
+                <div class="uiux-parent">
+                  <span class="uiux-text workflow-btn">UI UX Designing</span>
+                  <img src="./assets/work/uiux.jpg" alt="UI-UX" />
+                </div>
+              </div>
+              <div class="vertical-line">
+                <div class="testing1-parent">
+                  <span class="testing1-text workflow-btn">Testing</span>
+                  <img src="./assets/work/testing.jpg" alt="Testing" />
+                </div>
+              </div>
+              <div class="vertical-line">
+                <div class="development-parent">
+                  <span class="development-text workflow-btn">Development</span>
+                  <img src="./assets/work/development.jpg" alt="Development" />
+                </div>
+              </div>
+              <div class="vertical-line">
+                <div class="testing2-parent">
+                  <span class="testing2-text workflow-btn">Testing</span>
+                  <img src="./assets/work/testing.jpg" alt="Testing" />
+                </div>
+              </div>
+              <div class="handover-parent">
+                <span class="handover-text workflow-btn">Handover</span>
+                <img src="./assets/work/handover.jpg" alt="Handover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------- Workflow section ends -------------------------->
+
+      <!-- <section id="portfolio" class="section_space_top">
+            <div id="elem-container">
+                <div class="elem" id="elem1"
+                    data-image="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>Makers Studio HOI</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1506792006437-256b665541e2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>50th Anniversary</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1561707553-c5ea5032dbb7?q=80&w=2464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>NYFW Popup</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1523895665936-7bfe172b757d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>Air Force 12021</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1541490242199-e2f61ef1da05?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>SOHO NYC</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1505273569306-bd0741c32700?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>SOHO 2023</h2>
+                </div>
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1602123162521-d2735591a3ba?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay-elem"></div>
+                    <h2>Play New Kidvision</h2>
+                </div>
+            </div>
+        </section> -->
+
+      <!------------------------- about Us section starts -------------------------->
+
+      <div id="about-us" data-scroll class="section_space_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <h4 class="work-subheading">About Us</h4>
+              <h1 class="work-heading">who we are</h1>
+              <p class="work-subtitle">Learn more about us that who we are</p>
+            </div>
+            <div class="col-12 mt-5">
+              <p class="about-para" data-scroll data-scroll-speed="2">
+                Welcome to Skylarc, where we transcend the mere realm of
+                startups, serving as the visionary architects of your digital
+                transformation journey. With our seasoned team of experts, we
+                breathe life into your digital aspirations through meticulous
+                coding and unparalleled innovation.
+              </p>
+              <p class="about-para" data-scroll data-scroll-speed="2">
+                At Skylarc, we pride ourselves on our client-centric ethos,
+                where your voice resonates at the heart of our endeavors.
+                Through constant collaboration and unwavering communication, we
+                ensure that your vision is not only realized but tailored
+                precisely to meet the unique needs of your organization. With
+                Skylarc as your partner, the horizon of digital possibilities
+                knows no bounds.
+              </p>
+              <img data-scroll data-scroll-speed="1" src="./assets/about/aboutus.png" alt="aboutus"
+                class="img-fluid mt-5 about-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------- about us section ends -------------------------->
+
+      <!------------------------- Why Us section starts -------------------------->
+
+      <div id="whyus" data-scroll data-scroll-speed="1" data-scroll-container class="section_space_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <h4 class="work-subheading">Why Us</h4>
+              <h1 class="work-heading">why work with us</h1>
+              <p class="work-subtitle">
+                See how we are making lives of our clients better and why you
+                should work with us.
+              </p>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mt-3 d-flex flex-column justify-content-end">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Tailored Solution
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Embrace a bespoke approach tailored explicitly to your
+                      business requirements. Our solutions are meticulously
+                      crafted to ensure your online presence stands out.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Lasting Solution
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Embrace a bespoke approach tailored explicitly to your
+                      business requirements. Our solutions are meticulously
+                      crafted to ensure your online presence stands out.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Effective Communication
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Embrace a bespoke approach tailored explicitly to your
+                      business requirements. Our solutions are meticulously
+                      crafted to ensure your online presence stands out.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Satisfaction Guarented
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Embrace a bespoke approach tailored explicitly to your
+                      business requirements. Our solutions are meticulously
+                      crafted to ensure your online presence stands out.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 mt-3 position-relative">
+              <img src="./assets/whyus/whyus.png" alt="image" class="img-fluid" style="float: right" />
+              <div class="why-boxes">
+                <div class="why-box-one">
+                  <h3><span id="num" data-val="30">00+</span><span>+</span></h3>
+                  <span>satisfied clients</span>
+                </div>
+                <div class="why-box-two">
+                  <h3><span id="num" data-val="50">00+</span><span>+</span></h3>
+                  <span>successful projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------- whyus section ends -------------------------->
+
+      <!------------------------- contact Us section starts -------------------------->
+
+      <section id="contact" data-scroll class="section_space_top section_space_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 contact-container">
+              <h2>We are eager to meet your challenge</h2>
+              <h2 class="top-margin">Get In Touch</h2>
+              <div class="book mt-3">
+                <h5>Book Free Consultation</h5>
+                <div class="d-flex align-items-center gap-4 top-margin">
+                  <div class="message">
+                    <a href="">
+                      <i class="ri-chat-3-line"></i>
+                    </a>
+                  </div>
+                  <div class="message">
+                    <a href="">
+                      <i class="ri-phone-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------- contact Us section ends -------------------------->
+
+      <!------------------------- Footer section ends -------------------------->
+
+      <footer id="footer" data-scroll class="section_space_lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 mt-3">
+              <img src="./assets/logo/footer-logo.png" alt="logo" class="footer-logo" />
+            </div>
+            <div class="col-sm-12 col-md-3 mt-3">
+              <ul class="footer-links">
+                <li class="footer-overflow">
+                  <a class="work-link">
+                    <span class="btn_text">
+                      <small>Our Work</small>
+                      <small>Our Work</small>
+                      <!-- Duplicate for hover effect -->
+                    </span>
+                  </a>
+                </li>
+                <li class="footer-overflow">
+                  <a href="">Testimonials</a>
+                </li>
+                <li class="footer-overflow">
+                  <a href="">Our Services</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 mt-3">
+              <ul class="footer-links">
+                <li class="footer-overflow">
+                  <a href="">Our Workflow</a>
+                </li>
+                <li class="footer-overflow">
+                  <a href="">About US</a>
+                </li>
+                <li class="footer-overflow">
+                  <a href="">Why Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 mt-3">
+              <ul class="footer-links">
+                <li class="footer-overflow">
+                  <a href="">hello@skylarc.agency</a>
+                </li>
+                <li class="footer-overflow">
+                  <a href="">+966 55 123 4567</a>
+                </li>
+              </ul>
+              <ul class="footer-socia-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="copyright">
+                <span> Copyright &copy; Skylarc Private Limited (SME) </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!------------------------- Footer section ends -------------------------->
+    </div>
+
+    <!------------------------- sticky section starts -------------------------->
+    <div class="hero-right" data-scroll>
+      <div class="social-links">
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-behance"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+      </div>
+    </div>
+    <div class="scroll-top">
+      <span><a href="#hero">Go to top</a></span>
+    </div>
+    <!------------------------- sticky section ends -------------------------->
+<script src="/New folder (2)/updataHero.js"></script>
+<script src="./New folder (2)/updataCarde.js"></script>
+<script src="./New folder (2)/updataCarde1.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- isotopes filter -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- locomotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- count js -->
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+
+    <!-- my script -->
+    <script src="./js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Animation check interval
+        setInterval(function () {
+          $(".new-card").each(function () {
+            var opacity = $(this).css("opacity");
+            var transform = $(this).css("transform");
+
+            // Check if the card is fully visible
+            if (opacity === "1" && transform.includes("matrix(1,")) {
+              var imageUrl = $(this).attr("data-image");
+              $("#displayImage").attr("src", imageUrl);
+            }
+          });
+        }, 100);
+      });
+
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+      const portfolioMenuItems = document.querySelectorAll(
+        ".portfolio-menu ul li"
+      );
+
+      portfolioMenuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove 'active' class from all menu items
+          portfolioMenuItems.forEach((menuItem) =>
+            menuItem.classList.remove("active")
+          );
+          // Add 'active' class to the clicked menu item
+          item.classList.add("active");
+          const filterValue = item.getAttribute("data-filter");
+          // Hide all portfolio items
+          portfolioItems.forEach(
+            (portfolioItem) => (portfolioItem.style.display = "none")
+          );
+          // Show portfolio items that match the filter
+          document.querySelectorAll(filterValue).forEach((filteredItem) => {
+            filteredItem.style.display = "block";
+          });
+        });
+      });
+    </script>
+</body>
+
+</html>
